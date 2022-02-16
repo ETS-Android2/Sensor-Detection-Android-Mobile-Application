@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Sensor Detection</string>
+    <string name="greeting_text">Hello World! "From Name" </string>
+    <string name="sensors_data">Sensors Available</string>
+</resources>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.sensordata.MainActivity"
+    android:layout_height= "match_parent"
+    android:layout_width= "match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="189dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="111dp"
+            android:layout_marginTop="43dp"
+            android:layout_marginEnd="111dp"
+            android:layout_marginBottom="507dp"
+            android:text="@string/sensors_data"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Switch
+            android:id="@+id/accelerometer"
+            android:layout_width="172dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="105dp"
+            android:layout_marginBottom="427dp"
+            android:text="Accelerometer"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/light"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Switch
+            android:id="@+id/light"
+            android:layout_width="173dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="105dp"
+            android:layout_marginBottom="427dp"
+            android:text="Light"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/accelerometer"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Switch
+            android:id="@+id/temperature"
+            android:layout_width="172dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="251dp"
+            android:layout_marginBottom="281dp"
+            android:text="Temperature"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/proximity"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Switch
+            android:id="@+id/linearacc"
+            android:layout_width="172dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="177dp"
+            android:layout_marginBottom="355dp"
+            android:text="Linear-Acceleration"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/gps"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Switch
+            android:id="@+id/gps"
+            android:layout_width="173dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="177dp"
+            android:layout_marginBottom="355dp"
+            android:text="GPS"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/linearacc"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Switch
+            android:id="@+id/proximity"
+            android:layout_width="173dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="251dp"
+            android:layout_marginBottom="281dp"
+            android:text="Proximity"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/temperature"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/avg_acc"
+            android:layout_width="170dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="330dp"
+            android:layout_marginBottom="182dp"
+            android:text="Average Accelerometer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/avg_acc_show"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/avg_acc_show"
+            android:layout_width="184dp"
+            android:layout_height="89dp"
+            android:layout_marginTop="317dp"
+            android:layout_marginBottom="171dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="normal"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/avg_acc"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/avg_temp_btn"
+            android:layout_width="167dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="430dp"
+            android:layout_marginBottom="91dp"
+            android:text="Average Temperature"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/avg_temp_view"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/avg_temp_view"
+            android:layout_width="184dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="430dp"
+            android:layout_marginBottom="91dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="normal"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/avg_temp_btn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/motion_view"
+            android:layout_width="169dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="513dp"
+            android:layout_marginBottom="3dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="normal"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/motion_btn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/motion_btn"
+            android:layout_width="172dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="513dp"
+            android:text="Motion/Stationary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/motion_view"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

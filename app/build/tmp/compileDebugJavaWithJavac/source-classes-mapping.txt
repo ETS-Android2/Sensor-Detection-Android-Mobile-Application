@@ -1,0 +1,43 @@
+com/example/sensordata/DaoClass/ProximityDao.java
+ com.example.sensordata.DaoClass.ProximityDao
+com/example/sensordata/EntityClass/GPSEntity.java
+ com.example.sensordata.EntityClass.GPSEntity
+com/example/sensordata/DaoClass/AccelerometerDao.java
+ com.example.sensordata.DaoClass.AccelerometerDao
+com/example/sensordata/BuildConfig.java
+ com.example.sensordata.BuildConfig
+com/example/sensordata/DaoClass/TemperatureDao.java
+ com.example.sensordata.DaoClass.TemperatureDao
+com/example/sensordata/DataBindingTriggerClass.java
+ com.example.sensordata.DataBindingTriggerClass
+com/example/sensordata/EntityClass/TemperatureEntity.java
+ com.example.sensordata.EntityClass.TemperatureEntity
+com/example/sensordata/DaoClass/LightDao.java
+ com.example.sensordata.DaoClass.LightDao
+com/example/sensordata/EntityClass/ProximityEntity.java
+ com.example.sensordata.EntityClass.ProximityEntity
+com/example/sensordata/DaoClass/LinearAccelerationDao.java
+ com.example.sensordata.DaoClass.LinearAccelerationDao
+com/example/sensordata/DaoClass/GPSDao.java
+ com.example.sensordata.DaoClass.GPSDao
+com/example/sensordata/EntityClass/LinearAccelerationEntity.java
+ com.example.sensordata.EntityClass.LinearAccelerationEntity
+com/example/sensordata/EntityClass/AccelerometerEntity.java
+ com.example.sensordata.EntityClass.AccelerometerEntity
+com/example/sensordata/EntityClass/LightEntity.java
+ com.example.sensordata.EntityClass.LightEntity
+com/example/sensordata/RoomDatabaseActivity.java
+ com.example.sensordata.RoomDatabaseActivity
+com/example/sensordata/MainActivity.java
+ com.example.sensordata.MainActivity
+ com.example.sensordata.MainActivity$1
+ com.example.sensordata.MainActivity$2
+ com.example.sensordata.MainActivity$3
+ com.example.sensordata.MainActivity$4
+ com.example.sensordata.MainActivity$5
+ com.example.sensordata.MainActivity$6
+ com.example.sensordata.MainActivity$7
+ com.example.sensordata.MainActivity$8
+ com.example.sensordata.MainActivity$9
+com/example/sensordata/DateTypeConverter.java
+ com.example.sensordata.DateTypeConverter
