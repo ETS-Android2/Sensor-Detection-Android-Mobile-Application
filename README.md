@@ -13,9 +13,8 @@ Explore Sensors Android app which has: <br/>
 ### ScreenShots
 
 #### First Page:
-<img src="" width=30% height=30%>
+<img src="https://user-images.githubusercontent.com/43794593/154321545-1f66fa2d-4ea7-49bf-bdc9-36dffcae0b02.jpg" width=30% height=30%>
 <br/>
 
 #### Selecting Sensors and Displaying Averages:
-<img src="" width=30% height=30%>
-<img src="" width=30% height=30%>
+<img src="https://user-images.githubusercontent.com/43794593/154321539-add8e056-79bd-4dea-a127-362e15f11ca4.jpg" width=30% height=30%>      <img src="https://user-images.githubusercontent.com/43794593/154321522-79cbc7a9-abdd-4c37-a0e9-c3d8c251e6b6.jpg" width=30% height=30%>
